@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="data">
+{{data}}
+
+<div *ngFor="let user of users | searchFilter : data">
+<span>The name is{{user.name}}</span><br/>
+<span>The descrption is {{user.descrption}}</span>
+</div>
